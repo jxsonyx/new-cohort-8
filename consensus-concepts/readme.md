@@ -1,1 +1,0 @@
-[CONSENSUS COCNEPT](https://hackmd.io/@GhXpzopCT4GRIXOIrUHk6g/rkWEO3L8-l)
