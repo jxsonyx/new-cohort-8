@@ -157,7 +157,7 @@ contract VaultTest is Test {
         assertEq(user.balance, userBalanceBefore + 1 ether);
         assertEq(address(vault).balance, vaultBalanceBefore - 1 ether);
 
-        (uint256 balance, , bool active, bool isUnlocked) = vault.getVault(user, 0);
+        (uint256 balance,, bool active, bool isUnlocked) = vault.getVault(user, 0);
         assertEq(balance, 0);
         assertFalse(active);
         assertTrue(isUnlocked);
