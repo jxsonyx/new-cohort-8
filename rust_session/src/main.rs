@@ -2,6 +2,7 @@ mod sub;
 mod sum;
 mod ownership;
 mod array;
+mod mut_ex;
 
 
 fn main() {
@@ -10,5 +11,7 @@ fn main() {
     // ownership::test_ownership();
     // ownership::call_name();
     // array::test_array();
-    ownership::test_move();
+    // ownership::test_move();
+    // ownership::call_greet();
+    mut_ex::test_mut();
 }

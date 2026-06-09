@@ -20,3 +20,14 @@ pub fn test_move() {
     // println!("{}", a); // ❌ compile error: `a` was moved
     println!("{}", b);    // ✅ `b` is the owner now
 }
+
+pub fn greet(s: String) {          // `s` takes ownership
+    println!("Hello, {}!", s);
+}                               // `s` is dropped here
+
+pub fn call_greet() {
+    let name = String::from("Bob");
+    greet(name);               // ownership moves into `greet`
+
+    // println!("{}", name);   // ❌ compile error: `name` was moved
+}
